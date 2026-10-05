@@ -1,0 +1,14 @@
+# VEXcode build output
+build/
+*.vxelf
+*.bin
+*.o
+
+# VEXcode / editor project junk
+.vscode/
+*.vex.bak
+.DS_Store
+Thumbs.db
+
+# Temporary Office lock files (if you ever edit the .docx locally)
+~$*.docx
