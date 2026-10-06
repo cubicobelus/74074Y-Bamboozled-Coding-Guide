@@ -40,6 +40,38 @@ python site/tests/check_browser.py
   lesson uses which term), so update the names and expected values in that file
   when real lessons replace the filler.
 
+## Publishing
+
+`.github/workflows/pages.yml` publishes the site to GitHub Pages at
+https://cubicobelus.github.io/74074Y-Bamboozled-Coding-Guide/ every time `main` is
+pushed. It can also be run by hand from the repo's Actions tab. In order, it:
+
+1. checks out the repo and sets up Python;
+2. runs `python site/build.py` and `python site/tests/check_site.py`. If either
+   fails, nothing is deployed;
+3. copies `site/out/index.html` into a folder of its own and uploads that folder
+   as the Pages artifact;
+4. deploys the artifact.
+
+Only the one HTML file is published. The workflow uses only GitHub's own actions,
+each pinned by its full commit SHA with the version in a comment. To update one,
+find its newest release, look up the commit that release tag points to, and
+replace both the SHA and the comment.
+
+One setting is needed, once: in the repo's Settings, under Pages, set Source to
+"GitHub Actions".
+
+Two temporary things are on the published page until the lessons are written:
+
+- **The banner** that says most lessons are placeholders. To remove it, delete the
+  `wip-banner` line in `shell/page.html` and the `.wip-banner` rules at the end of
+  `shell/style.css`.
+- **The noindex tag**, `<meta name="robots" content="noindex">` in the head of
+  `shell/page.html`. It asks search engines to skip the page. To allow indexing,
+  delete that line. It takes effect on the next deploy, and search engines may need
+  days or weeks to notice. Noindex is a request, not a lock: anyone with the link can
+  still open the page.
+
 ## What is in `site/`
 
 ```
@@ -258,8 +290,8 @@ of those LF files, so do not vendor a file with Windows line endings.
 - The preview panel opens on click or Enter, not on hover.
 - The site title is a constant (`SITE_TITLE`) in `build.py`; the overview lists the
   final name as an open decision.
-- Nothing publishes the site. There is no GitHub Pages workflow yet, and
-  `.github/workflows/` holds only a README.
+- The published page is temporary in two ways: it is marked noindex and carries a
+  work-in-progress banner. See Publishing for how to remove both.
 - Add-on pages are text only for now; they do not include the add-on's code files.
 - `check_browser.py` needs Microsoft Edge, and its expectations are tied to the
   filler lessons.

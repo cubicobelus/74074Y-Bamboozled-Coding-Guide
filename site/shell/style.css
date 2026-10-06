@@ -214,3 +214,9 @@ body.modal-open { overflow: hidden; }
 .choice[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-bg); }
 .choice .c-label { display: block; font-weight: 600; }
 .choice .c-where { display: block; color: var(--muted); font-size: 14px; }
+
+/* ---- work-in-progress banner (remove with the banner in page.html) ---- */
+.wip-banner {
+  padding: 6px 16px; text-align: center; font-size: 14px;
+  color: var(--text); background: var(--accent-bg); border-bottom: 1px solid var(--line);
+}

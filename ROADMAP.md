@@ -44,11 +44,14 @@ Done:
   built file, and `python site/tests/check_browser.py` for behavior in a
   headless browser.
 - A maintainer guide in `site/README.md`.
+- Publishing. A workflow (`.github/workflows/pages.yml`) rebuilds the site, checks
+  it and publishes it to GitHub Pages on every push to `main`. The built file is
+  made by the workflow and is not committed. Until the lessons are written, the
+  page carries a work-in-progress banner and is marked noindex so search engines
+  skip it.
 
 Not done yet in piece 2:
 
-- Publishing. The site is not on GitHub Pages and there is no workflow that
-  builds and publishes it.
 - Add-on pages do not yet show the add-on's real code files with a copy button
   and download link.
 - Release downloads (the beginner `.cpp` files and the intermediate `.zip`).
@@ -81,5 +84,4 @@ the repo is a stub waiting for content.
 - The wording of the first-visit question and the four starting paths.
 - Whether the vocabulary panel is text only or can show a small diagram.
 - The exact wording of the choose-one comments in the beginner template.
-- Whether the built HTML file is committed or built by a workflow when publishing.
 - Later option: one static page per lesson so search engines can index them.

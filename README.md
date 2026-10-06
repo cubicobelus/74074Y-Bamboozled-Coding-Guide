@@ -1,5 +1,7 @@
 # 74074Y Bamboozled VEX V5 Coding Guide
 
+Read the site: https://cubicobelus.github.io/74074Y-Bamboozled-Coding-Guide/
+
 A free pathway from zero coding knowledge to competition-level autonomous code for a VEX V5 robot. It comes from team 74074Y Bamboozled and is built from code the team has run in real competition. It is written for brand-new teams, whose members may have only used block coding or a little Python. Every piece of code is meant to come with a page that explains why it works.
 
 > **Status: mid-rebuild.** The beginner template and the guide in this repo are the v1.0 release, and they still work. The new knowledge site, lessons and add-ons are being built. Most lesson pages are placeholders for now, and the add-ons, tools and intermediate template are not built yet. See [`ROADMAP.md`](ROADMAP.md) for what is done and what comes next.
@@ -33,7 +35,7 @@ This project is a pathway into programming, not a way to skip it. A team can't p
 
 ## Build and open the site locally
 
-The new site is built from the Markdown pages in this repo into one HTML file. It is not published online. You need Python 3.10 or newer and nothing else:
+The site is built from the Markdown pages in this repo into one HTML file. A workflow rebuilds it and publishes it to the address above whenever `main` changes. To build it yourself you need Python 3.10 or newer and nothing else:
 
 ```
 python site/build.py
