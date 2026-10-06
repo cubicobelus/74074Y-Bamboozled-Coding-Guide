@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "start-here",
+    "title": "Start here",
+    "order": 1
+  },
+  {
+    "slug": "learn-to-think",
+    "title": "Learn to think",
+    "order": 2
+  },
+  {
+    "slug": "tutorial",
+    "title": "Beginner tutorial",
+    "order": 3
+  },
+  {
+    "slug": "how-to",
+    "title": "How-to guides",
+    "order": 4
+  },
+  {
+    "slug": "going-further",
+    "title": "Going further",
+    "order": 5
+  },
+  {
+    "slug": "competition",
+    "title": "Competition and consistency",
+    "order": 6
+  },
+  {
+    "slug": "strategy",
+    "title": "Strategy and design process",
+    "order": 7
+  },
+  {
+    "slug": "tools",
+    "title": "Tools",
+    "order": 8
+  },
+  {
+    "slug": "reference",
+    "title": "Reference",
+    "order": 9
+  }
+]

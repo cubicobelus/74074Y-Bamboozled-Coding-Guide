@@ -9,8 +9,8 @@ functional autonomous robot.
 
 1. **Read the guide** — Google Doc (best for phones/Chromebooks): **[REPLACE WITH YOUR GOOGLE DOC SHARE LINK]**
    *(or read it on GitHub: [`docs/74074Y_Drivetrain_Guide.md`](docs/74074Y_Drivetrain_Guide.md))*
-2. **Get the code** — [`template/74074Y_Drivetrain_Template.cpp`](template/74074Y_Drivetrain_Template.cpp). The guide's Part 1 walks you through pasting this into VEXcode step by step.
-3. **Print or open the worksheet** once you get to tuning — [`docs/PID_Tuning_Log.docx`](docs/PID_Tuning_Log.docx).
+2. **Get the code** — [`templates/beginner/74074Y_Drivetrain_Template.cpp`](templates/beginner/74074Y_Drivetrain_Template.cpp). The guide's Part 1 walks you through pasting this into VEXcode step by step.
+3. **Print or open the worksheet** once you get to tuning — [`archive/PID_Tuning_Log.docx`](archive/PID_Tuning_Log.docx).
 
 Not sure which file in `docs/` you need? See [`docs/README.md`](docs/README.md).
 

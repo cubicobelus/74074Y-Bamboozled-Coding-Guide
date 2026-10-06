@@ -1,0 +1,7 @@
+term	alternates	target
+error	errors	tolerance#error
+tolerance	tolerances	tolerance#tolerance
+kP	kp|proportional gain	from-this-to-pid#kp
+heading	headings	turn-to-angle-walkthrough#heading
+gear ratio	gear ratios|gearing	motors-count-degrees#gear-ratio
+odometry		odometry#odometry
