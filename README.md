@@ -1,26 +1,45 @@
-# 74074Y Bamboozled — VEX V5 Drivetrain Coding Guide
+# 74074Y Bamboozled VEX V5 Coding Guide
 
-A beginner-friendly teaching package for mentoring new programmers on a VEX
-V5 team: a working, bug-fixed PID drivetrain template in C++, paired with a
-from-scratch guide that takes a student with zero coding experience to a
-functional autonomous robot.
+A free pathway from zero coding knowledge to competition-level autonomous code for a VEX V5 robot. It comes from team 74074Y Bamboozled and is built from code the team has run in real competition. It is written for brand-new teams, whose members may have only used block coding or a little Python. Every piece of code is meant to come with a page that explains why it works.
 
-## New student? Start here.
+> **Status: mid-rebuild.** The beginner template and the guide in this repo are the v1.0 release, and they still work. The new knowledge site, lessons and add-ons are being built. Most lesson pages are placeholders for now, and the add-ons, tools and intermediate template are not built yet. See [`ROADMAP.md`](ROADMAP.md) for what is done and what comes next.
 
-1. **Read the guide** — Google Doc (best for phones/Chromebooks): **[REPLACE WITH YOUR GOOGLE DOC SHARE LINK]**
-   *(or read it on GitHub: [`docs/74074Y_Drivetrain_Guide.md`](docs/74074Y_Drivetrain_Guide.md))*
-2. **Get the code** — [`templates/beginner/74074Y_Drivetrain_Template.cpp`](templates/beginner/74074Y_Drivetrain_Template.cpp). The guide's Part 1 walks you through pasting this into VEXcode step by step.
-3. **Print or open the worksheet** once you get to tuning — [`archive/PID_Tuning_Log.docx`](archive/PID_Tuning_Log.docx).
+## Start here
 
-Not sure which file in `docs/` you need? See [`docs/README.md`](docs/README.md).
+If you want what works today:
 
-## What's in here
+1. **Read the guide.** [`docs/74074Y_Drivetrain_Guide.md`](docs/74074Y_Drivetrain_Guide.md) reads fine right here on GitHub. It takes you from an empty project to a robot that drives and turns on its own.
+2. **Get the code.** [`templates/beginner/74074Y_Drivetrain_Template.cpp`](templates/beginner/74074Y_Drivetrain_Template.cpp) is the file you paste into VEXcode V5. Start a new C++ project, add your motors and inertial sensor in the Devices menu, then paste the file over `main.cpp`. The guide's Part 1 walks through each step.
+3. **Tune with the log.** When you reach tuning, use [`docs/PID_Tuning_Log.md`](docs/PID_Tuning_Log.md), or print the worksheet: [`archive/PID_Tuning_Log.docx`](archive/PID_Tuning_Log.docx).
 
-| Folder | Contents |
+## Where things are
+
+| Folder | What is in it today |
 | --- | --- |
-| `templates/beginner/` | `74074Y_Drivetrain_Template.cpp` — the actual VEXcode V5 C++ file students paste into their project. Zones A–G, matches the guide step-for-step. |
-| `docs/` | The guide and tuning log, each in `.docx` (source of truth, upload this to Google Docs) and `.md` (readable on GitHub) form. See `docs/README.md` for which one to open. |
-| `brainstorm/` | `autotune_brainstorm.md` — exploratory notes on a possible future self-tuning PID add-on. **Not part of the current curriculum** — kept separate so it doesn't get mistaken for a finished feature. |
+| `addons/` | One folder for each planned add-on: autotuner, lift PID, MCL, distance sensor resets and balance calibration. Each has a placeholder README. There is no add-on code yet. |
+| `archive/` | The original guide and tuning log as `.docx` files, for printing or uploading to Google Docs. |
+| `brainstorm/` | Notes on a possible self-tuning PID add-on. Not part of the current curriculum. |
+| `docs/` | The v1.0 guide and tuning log as `.md`, plus the pages of the new site, one folder per section. Most of those pages are placeholders. |
+| `field/` | A placeholder for the shared field map: a README, a placeholder season file and a stub script. Nothing real yet. |
+| `site/` | The build script and page shell that turn the pages in `docs/` and `addons/` into one HTML file, with its libraries and checks. |
+| `templates/` | `beginner/` holds the v1.0 template. `intermediate/` holds only a README, because that template is not built yet. |
+| `tools/` | Placeholders for the planned field simulator and interactive demos. Nothing is built yet. |
+
+The top level also has `ROADMAP.md` and `LICENSE`.
+
+## For coaches
+
+This project is a pathway into programming, not a way to skip it. A team can't press a download button and end up with a finished robot program, and that is on purpose. The goal is that students can explain every line they run, change it, and fix it when it breaks. Use the guide to help students think, not to hand them finished code.
+
+## Build and open the site locally
+
+The new site is built from the Markdown pages in this repo into one HTML file. It is not published online. You need Python 3.10 or newer and nothing else:
+
+```
+python site/build.py
+```
+
+Then open `site/out/index.html` in a browser. It works with no internet. `site/out/` is not committed, so you build it yourself. For how the build works, how to add a page and how to run the checks, see [`site/README.md`](site/README.md).
 
 ## Philosophy
 
@@ -30,13 +49,6 @@ Not sure which file in `docs/` you need? See [`docs/README.md`](docs/README.md).
 - **Keep the base template simple.** Advanced ideas (slew rate limiting,
   odometry, self-tuning PID) are deliberately left out of the shipped code
   and mentioned only as "going further" callouts.
-
-## Using the template
-
-1. Open VEXcode V5, start a new C++ project.
-2. Configure your motors + inertial sensor in the Devices menu (see the guide, Part 1, Step 2).
-3. Paste `templates/beginner/74074Y_Drivetrain_Template.cpp` over `main.cpp`.
-4. Follow the guide's Part 1 (Tutorial) to fill in Zone B with your robot's real measurements.
 
 ## Keeping the docx and Google Doc in sync
 
