@@ -239,8 +239,8 @@ Pipeline sketch:
   2. After each trial (or after the whole run), dump the log as CSV-ish
      lines via printf() over the existing USB serial console -- no new
      tooling needed, this channel already exists for any VEXcode/PROS project.
-  3. MVP: paste terminal output into a spreadsheet, or paste it into a Claude
-     conversation/artifact for an instant chart. Zero extra tooling.
+  3. MVP: paste terminal output into a spreadsheet and chart it there.
+     Zero extra tooling.
   4. Stretch: small companion Python script (pyserial + matplotlib) that
      reads the live serial stream and plots error-vs-time / power-vs-time
      per trial automatically. More setup, nicer live-feedback loop.
