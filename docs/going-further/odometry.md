@@ -10,3 +10,9 @@ terms: [odometry, heading]
 
 - Explanation of odometry goes here.
 - Example goes here.
+
+## What is odometry
+
+Definition of odometry goes here.
+
+- Example of odometry goes here.

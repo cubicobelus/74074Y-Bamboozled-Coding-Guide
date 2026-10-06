@@ -9,6 +9,7 @@
 </style>
 </head>
 <body>
+<noscript><p class="noscript">This guide needs JavaScript. Please turn it on, or open the file in a browser that allows it.</p></noscript>
 <a class="skip" href="#content">Skip to the lesson</a>
 <header class="topbar">
   <button id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
@@ -20,6 +21,7 @@
       <label class="visually-hidden" for="search-input">Search all lessons</label>
       <input id="search-input" type="search" placeholder="Search all lessons" autocomplete="off">
     </div>
+    <button id="change-start" class="linklike" type="button">Change my starting point</button>
     <ol id="search-results" class="results" hidden></ol>
     <nav id="nav" aria-label="Lessons"></nav>
   </aside>
@@ -30,6 +32,28 @@
     <h2 class="toc-title">On this page</h2>
     <ol id="toc" class="toc"></ol>
   </aside>
+</div>
+<button id="back-button" class="back-button" type="button" hidden>Back to where you were<span id="back-count"></span></button>
+<div id="preview-backdrop" class="modal-backdrop" hidden>
+  <div id="preview" class="modal preview" role="dialog" aria-modal="true" aria-labelledby="preview-title" tabindex="-1">
+    <div class="modal-bar">
+      <div><strong id="preview-title"></strong> <span id="preview-where" class="muted"></span></div>
+      <div class="modal-actions">
+        <button id="preview-go" class="btn" type="button">Go to the full section</button>
+        <button id="preview-close" class="btn" type="button">Close</button>
+      </div>
+    </div>
+    <div id="preview-body" class="preview-body"></div>
+    <p class="modal-hint">Click anywhere in this panel to go to the full section. Press Escape to close.</p>
+  </div>
+</div>
+<div id="welcome-backdrop" class="modal-backdrop" hidden>
+  <div id="welcome" class="modal welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title" tabindex="-1">
+    <h2 id="welcome-title">Where would you like to start?</h2>
+    <p class="muted">Pick the one that fits you. You can change it any time from the menu.</p>
+    <div id="welcome-choices" class="welcome-choices"></div>
+    <button id="welcome-skip" class="btn" type="button">Skip for now</button>
+  </div>
 </div>
 <script type="application/json" id="site-data">{{DATA}}</script>
 <script>

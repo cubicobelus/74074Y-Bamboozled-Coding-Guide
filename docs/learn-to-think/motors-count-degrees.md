@@ -10,3 +10,9 @@ terms: [gear ratio]
 
 - Explanation of motors count degrees goes here.
 - Example goes here.
+
+## Gear ratio
+
+Definition of gear ratio goes here.
+
+- Example of gear ratio goes here.

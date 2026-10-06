@@ -10,3 +10,4 @@ terms: []
 
 - Explanation of slowing down and overshoot goes here.
 - Example goes here.
+- How kP and the error work together goes here.

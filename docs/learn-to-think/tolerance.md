@@ -10,3 +10,17 @@ terms: [tolerance, error]
 
 - Explanation of tolerance goes here.
 - Example goes here.
+
+## Error
+
+Definition of error goes here.
+
+- Example of error goes here.
+- Second example goes here.
+
+## What is tolerance
+
+Definition of tolerance goes here.
+
+- Example of tolerance goes here.
+- Second example goes here.

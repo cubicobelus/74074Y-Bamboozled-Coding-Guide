@@ -10,6 +10,7 @@ terms: []
 
 - Explanation of IMU scale test goes here.
 - Example goes here.
+- How the IMU heading and the error show up goes here.
 
 ## Example code
 

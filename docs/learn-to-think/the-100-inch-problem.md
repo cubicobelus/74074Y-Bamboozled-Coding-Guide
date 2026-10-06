@@ -10,3 +10,4 @@ terms: [error, tolerance]
 
 - Explanation of the 100-inch problem goes here.
 - Example goes here.
+- The error between the robot and the target goes here, with the tolerance.
