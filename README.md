@@ -18,7 +18,7 @@ Not sure which file in `docs/` you need? See [`docs/README.md`](docs/README.md).
 
 | Folder | Contents |
 | --- | --- |
-| `template/` | `74074Y_Drivetrain_Template.cpp` — the actual VEXcode V5 C++ file students paste into their project. Zones A–G, matches the guide step-for-step. |
+| `templates/beginner/` | `74074Y_Drivetrain_Template.cpp` — the actual VEXcode V5 C++ file students paste into their project. Zones A–G, matches the guide step-for-step. |
 | `docs/` | The guide and tuning log, each in `.docx` (source of truth, upload this to Google Docs) and `.md` (readable on GitHub) form. See `docs/README.md` for which one to open. |
 | `brainstorm/` | `autotune_brainstorm.md` — exploratory notes on a possible future self-tuning PID add-on. **Not part of the current curriculum** — kept separate so it doesn't get mistaken for a finished feature. |
 
@@ -35,7 +35,7 @@ Not sure which file in `docs/` you need? See [`docs/README.md`](docs/README.md).
 
 1. Open VEXcode V5, start a new C++ project.
 2. Configure your motors + inertial sensor in the Devices menu (see the guide, Part 1, Step 2).
-3. Paste `template/74074Y_Drivetrain_Template.cpp` over `main.cpp`.
+3. Paste `templates/beginner/74074Y_Drivetrain_Template.cpp` over `main.cpp`.
 4. Follow the guide's Part 1 (Tutorial) to fill in Zone B with your robot's real measurements.
 
 ## Keeping the docx and Google Doc in sync
