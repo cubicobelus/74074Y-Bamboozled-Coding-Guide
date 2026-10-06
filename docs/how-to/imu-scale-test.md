@@ -10,3 +10,10 @@ terms: []
 
 - Explanation of IMU scale test goes here.
 - Example goes here.
+
+## Example code
+
+```cpp
+// Example code goes here.
+int placeholder = 0;
+```

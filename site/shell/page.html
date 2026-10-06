@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SITE_TITLE}}</title>
+<style>
+{{STYLE}}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">Skip to the lesson</a>
+<header class="topbar">
+  <button id="menu-button" type="button" aria-controls="sidebar" aria-expanded="false">Menu</button>
+  <a class="site-name" href="#/">{{SITE_TITLE}}</a>
+</header>
+<div class="layout">
+  <aside id="sidebar" class="sidebar">
+    <div class="search">
+      <label class="visually-hidden" for="search-input">Search all lessons</label>
+      <input id="search-input" type="search" placeholder="Search all lessons" autocomplete="off">
+    </div>
+    <ol id="search-results" class="results" hidden></ol>
+    <nav id="nav" aria-label="Lessons"></nav>
+  </aside>
+  <main id="content" class="content" tabindex="-1">
+    <article id="lesson"></article>
+  </main>
+  <aside id="toc-wrap" class="toc-wrap" aria-label="On this page" hidden>
+    <h2 class="toc-title">On this page</h2>
+    <ol id="toc" class="toc"></ol>
+  </aside>
+</div>
+<script type="application/json" id="site-data">{{DATA}}</script>
+<script>
+{{MINISEARCH}}
+</script>
+<script>
+{{APP}}
+</script>
+</body>
+</html>
